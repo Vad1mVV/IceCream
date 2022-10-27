@@ -5,138 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./modals.html">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&family=Seymour+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./index.html">
-                <img src="" alt="logo">
+        <div class="container header__container">
+            <a href="./index.html" class="logo">
+                <svg class="logo__img">
+                    <use href="./img/symbol-defs.svg#icon-logo"></use>
+                </svg>
             </a>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#about">How it’s made?</a>
-                </li>
-                <li>
-                    <a href="#products">Our products</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <svg width="32" hieght="32">
-            <use></use>
-        </svg>
-        <button type="button">
-            Buy now
-        </button>
-        <div class="mobile_modal">
-            <a href="">
-                <img src="" alt="logo">
-            </a>
-            <svg>
-                <use></use>
-            </svg>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">How it’s made?</a>
-                </li>
-                <li>
-                    <a href="">Our products</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-                <button type="button">
-                    Buy now
-                </button>
-            </ul>
-        </div>
-        <div class="modal__buyNow">
-            <h2>Buy now</h2>
-            <ul>
-                <li>
-                    <img src="" alt="ice cream">
-                    <h3>ice cream</h3>
-                </li>
-                <li>
-                    <img src="" alt="ice coffee">
-                    <h3>ice coffee</h3>
-                </li>
-                <li>
-                    <img src="" alt="milkshake">
-                    <h3>milkshake</h3>
-                </li>
-            </ul>
-            <form>
-                <ul>
-                    <li>
-                        <input type="text" placeholder="Name">
+            <nav class="header--center">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Home</a>
                     </li>
-                    <li>
-                        <input type="tel" placeholder="Phone">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">How it’s made?</a>
                     </li>
-                    <li>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Our products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
-            </form>
-            <button type="submit">Submit</button>
+            </nav>
+            <div class="header--right">
+                <svg width="32" height="32" class="burger__button--open">
+                    <use href="./img/symbol-defs.svg#icon-burger_button"></use>
+                </svg>
+                <button type="button" class="button buy__button">
+                    Buy now
+                    <svg width="12" height="12" class="button__arrow--buy">
+                        <use href="./img/symbol-defs.svg#icon-small-arrow"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero -->
         <section class="hero">
-            <h1>ice cream made with passion</h1>
-            <ul>
-                <li>
-                    <a href="#products">
-                        Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        How it’s made?
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <span>
-                        16
-                    </span>
-                    <span>
-                        cafes   
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        23
-                    </span>
-                    <span>
-                        food trucks 
-                    </span>
-                </li>
-            </ul>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                </p>
-                <svg>
-                    <use></use>
-                </svg>
+            <div class="container hero__container">
+                <div class="hero--left">
+                    <h1 class="hero__title">ice cream made with <span class="hero__title--bigger">passion</span></h1>
+                    <ul class="button__box--hero">
+                        <li>
+                            <a href="#products" class="hero__button--transparent">
+                                <span class="hero__button--text">
+                                    Products
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="hero__link">
+                                How it’s made?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="counter__box">
+                    <li class="counter__item">
+                        <span class="counter__number">
+                            16
+                        </span>
+                        <span class="counter__text">
+                            cafes
+                        </span>
+                    </li>
+                    <li class="counter__item">
+                        <span class="counter__number">
+                            23
+                        </span>
+                        <span class="counter__text">
+                            food trucks
+                        </span>
+                    </li>
+                </ul>
+                <div class="hero__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    </p>
+                    <svg class="hero__arrow--text">
+                        <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                </div>
             </div>
         </section>
 
         <!-- Products -->
-        <section class="products" id="products">
+        <!-- <section class="products" id="products">
             <p>100% natural</p>
             <h2>products</h2>
             <ul>
@@ -150,89 +114,6 @@
                         </svg>
                     </button>
                 </li>
-                <div class="modal__iceCream">
-                    <h3>Chololate icecream</h3>
-                    <img src="" alt="chocolate ice cream">
-                    <ul>
-                        <li>
-                            <p>
-                                <span>320</span>
-                                <span>kcal</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>4g</span>
-                                <span>Prote...</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>8.2g</span>
-                                <span>Fats</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>40,4g</span>
-                                <span>Carbs</span>
-                            </p>
-                        </li>
-                    </ul>
-                    <h4>Ingredients</h4>
-                    <ul>
-                        <li>
-                            <p>
-                                <span>Milk</span>
-                                <span>100ml</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>Belgian chocolate</span>
-                                <span>20g</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>Cream</span>
-                                <span>150ml</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>Cocoa powder</span>
-                                <span>30g</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>Sugar</span>
-                                <span>40g</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <span>Vanilla sugar</span>
-                                <span>10g</span>
-                            </p>
-                        </li>
-                    </ul>
-                    <form>
-                        <ul>
-                            <li>
-                                <input type="text" placeholder="Name">
-                            </li>
-                            <li>
-                                <input type="tel" placeholder="Phone">
-                            </li>
-                            <li>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
-                            </li>
-                        </ul>
-                    </form>
-                    <button type="submit">Submit</button>
-                </div>
                 <li>
                     <img src="" alt="ice coffee">
                     <h3>ice cream</h3>
@@ -254,10 +135,10 @@
                     </button>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- How it's made? -->
-        <section class="about" id="about">
+        <!-- <section class="about" id="about">
             <p>tradition and love</p>
             <h2>How it’s made?</h2>
             <img src="" alt="">
@@ -275,14 +156,10 @@
                     <use></use>
                 </svg>
             </button>
-            <div class="modal__about">
-                <h3>How it’s made?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            </div>
-        </section>
+        </section> -->
 
         <!-- Advantages -->
-        <section class="advantages">
+        <!-- <section class="advantages">
             <h2>Advantages</h2>
             <ul>
                 <li>
@@ -313,18 +190,18 @@
                     </p>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- Gallery -->
-        <section class="gallery">
+        <!-- <section class="gallery">
             <h2>gallery</h2>
             <img src="" alt="ice cream">
             <img src="" alt="ice cream">
             <img src="" alt="ice cream">
-        </section>
+        </section> -->
 
         <!-- Customer Reviews -->
-        <section class="customerReviews">
+        <!-- <section class="customerReviews">
             <h2>Customer Reviews</h2>
             <ul>
                 <li>
@@ -360,10 +237,10 @@
                     </svg>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- Contacts -->
-        <section class="contact" id="contact">
+        <!-- <section class="contact" id="contact">
             <h2>Our establishments</h2>
             <ul>
                 <li>
@@ -504,10 +381,10 @@
                     </li>
                 </ul>
             </ul>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>
             <span>homemade ice cream made</span>
             <span>with passion</span>
@@ -540,6 +417,6 @@
             <a href="">+61 (0) 383 766 284</a>
         </p>
         <p>© 2022 - IceCream. All Rights Reserved.</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

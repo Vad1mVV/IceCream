@@ -1,0 +1,45 @@
+section {
+    padding: 60px 20px;
+}
+.container {
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 15px;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: flex;
+
+    list-style: none;
+}
+a {
+    text-decoration: none ;
+}
+.button {
+    background-color: $button-bgc;
+
+    font-weight: 600;
+
+    border: $button-bgc 0px solid;
+}

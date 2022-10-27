@@ -1,0 +1,178 @@
+.hero {
+    position: relative;
+    background-color: $hero-bgc;
+
+    background-image: url(../../img/hero_bgc-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    padding-top: 110px;
+}
+.hero__title {
+    width: 247px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-size: 26px;
+    line-height: 1.46;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $primary-text-color;
+
+    margin-bottom: 32px;
+}
+.hero__title--bigger {
+    font-size: 34px;
+    line-height: 0.97;
+}
+.button__box--hero {
+    margin-bottom: 200px;
+}
+.hero__button--transparent {
+    display: flex;
+    align-items: center;
+
+    width: 62px;
+    height: 24px;
+
+    background-color: $hero-bgc;
+
+    border: $button-bgc 2px solid;
+    border-radius: 8px;
+
+    margin-right: 20px;
+}
+.hero__button--text {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+
+    color: $second-text-color;
+}
+.hero__link {
+    color: $button-bgc;
+    text-decoration: underline;
+
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+}
+.counter__box,
+.hero__text {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url(../../img/hero_bgc-tablet.jpg);
+        height: 415px;
+    }
+    .hero__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero__title {
+        width: 180px;
+
+        font-size: 18px;
+        line-height: 1.28;
+    }
+    .hero__title--bigger {
+        font-size: 24px;
+        line-height: 0.55;
+    }
+    .button__box--hero {
+        margin-bottom: 193px;
+    }
+    .counter__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .counter__item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        align-items: end;
+    }
+    .counter__number {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+
+        color: $second-text-color;
+    }
+    .counter__text {
+        font-size: 8px;
+        line-height: 1.25;
+
+        color: $primary-text-color;
+    }
+    .hero__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        position: absolute;
+        left: 25%;
+        bottom: 32px;
+
+        width: 151px;
+
+        font-size: 12px;
+        line-height: 1.4;
+
+        color: $primary-text-color;
+    }
+    .hero__arrow--text {
+        width: 40px;
+        height: 15px;
+
+        fill: $primary-text-color;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url(../../img/hero_bgc-desktop.jpg);
+        height: 665px;
+    }
+    .hero__title,
+    .hero__title--bigger {
+        width: 367px;
+
+        font-size: 38px;
+        line-height: 1.26;
+    }
+    .hero__button--transparent {
+        width: 134px;
+        height: 42px;
+
+        margin-right: 34px;
+    }
+    .hero__button--text {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+    .hero__link {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+    .counter__box {
+        gap: 16px;
+    }
+    .counter__number {
+        font-size: 46px;
+        line-height: 1.21;
+    }
+    .counter__text {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+    .hero__text {
+        bottom: 111px;
+    }
+}
