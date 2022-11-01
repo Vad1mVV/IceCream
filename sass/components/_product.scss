@@ -1,0 +1,168 @@
+.product {
+    background-image: url(../../img/iceCream_bgc.jpg);
+    background-position: center;
+}
+.product__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product__onTitle {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-transform: uppercase;
+
+    color: $second-text-color;
+
+    margin-bottom: 12px;
+}
+.product__title {
+    font-family: 'Seymour One';
+
+    font-size: 30px;
+    line-height: 1.27;
+
+    text-transform: uppercase;
+
+    color: $second-text-color;
+
+    margin-bottom: 150px;
+}
+.product__box {
+    display: flex;
+    flex-direction: column;
+    gap: 165px;
+}
+.product__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    width: 280px;
+    height: 420px;
+
+    padding: 120px 40px 20px;
+
+    border-radius: 24px;
+}
+.product__item--iceCream {
+    background-color: $iceCream-bgc;
+}
+.product__item--iceCoffee {
+    background-color: $iceCoffee-bgc;
+}
+.product__item--milkshakes {
+    background-color: $fourth-text-color;
+}
+.item__img--product {
+    position: absolute;
+    top: 0px;
+    transform: translate(-50%, -50%);
+
+    z-index: 100;
+
+    border-radius: 50%;
+}
+.product__circle {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.product__circle--iceCream {
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+.product__circle--iceCoffee {
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.product__circle--milkshakes {
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+.item__title--product {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    color: $second-text-color;
+}
+.item__text--product {
+    font-size: 14px;
+    line-height: 1.76;
+
+    color: $second-text-color;
+}
+.item__button--product {
+    background-color: transparent;
+
+    border: transparent 0px solid
+}
+@media screen and (min-width: 768px) {
+    .product__onTitle {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+    .product__title {
+        font-size: 34px;
+        line-height: 1.26;
+
+        margin-bottom: 200px;
+    }
+    .product__box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .product__item {
+        width: 224px;
+        height: 428px;
+
+        padding: 108px 26px 20px;
+    }
+    .item__title--product {
+        font-size: 22px;
+        line-height: 1.23;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .product__onTitle {
+        font-size: 30px;
+        line-height: 1.23;
+    }
+    .product__title {
+        font-size: 36px;
+        line-height: 1.25;
+
+        margin-bottom: 300px;
+    }
+    .product__box {
+        gap: 30px;
+    }
+    .product__item {
+        width: 370px;
+        height: 535px;
+
+        padding: 166px 62px 60px;
+    }
+    .product__circle {
+        width: 300px;
+        height: 300px;
+
+        top: 17px;
+    }
+}

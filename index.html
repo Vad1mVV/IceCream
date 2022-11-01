@@ -28,7 +28,7 @@
                         <a href="#about" class="nav__link">How it’s made?</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#products" class="nav__link">Our products</a>
+                        <a href="#product" class="nav__link">Our products</a>
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">Contact</a>
@@ -100,97 +100,182 @@
         </section>
 
         <!-- Products -->
-        <!-- <section class="products" id="products">
-            <p>100% natural</p>
-            <h2>products</h2>
-            <ul>
-                <li>
-                    <img src="" alt="ice cream">
-                    <h3>ice cream</h3>
-                    <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
-                    <button type="button">
-                        <svg>
-                            <use></use>
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <img src="" alt="ice coffee">
-                    <h3>ice cream</h3>
-                    <p>Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
-                    <button type="button">
-                        <svg>
-                            <use></use>
-                        </svg>
-                    </button>
-                </li>
-                <li>
-                    <img src="" alt="milkshakes">
-                    <h3>milkshakes</h3>
-                    <p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice/p>
-                    <button type="button">
-                        <svg>
-                            <use></use>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </section> -->
+        <section class="product" id="product">
+            <div class="container product__container">
+                <p class="product__onTitle">100% natural</p>
+                <h2 class="product__title">products</h2>
+                <ul class="product__box">
+                    <li class="product__item product__item--iceCream">
+                        <picture>
+                            <source srcset="./img/product_iceCream-desktop.jpg 1x, ./img/product_iceCream-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/product_iceCream-desktop.webp 1x, ./img/product_iceCream-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                
+                            <source srcset="./img/product_iceCream-tablet.jpg 1x, ./img/product_iceCream-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/product_iceCream-tablet.webp 1x, ./img/product_iceCream-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                
+                            <source srcset="./img/product_iceCream-mobile.jpg 1x, ./img/product_iceCream-mobile@2x.jpg 2x" />
+                            <source srcset="./img/product_iceCream-desktop.webp 1x, ./img/product_iceCream-tablet@2x.webp 2x"
+                                type="image/webp" />
+                
+                            <img src="./img/product_iceCream-mobile.jpg" alt="ice cream" class="item__img--product iceCream__img--product">
+                        </picture>
+                        <div class="product__circle product__circle--iceCream"></div>
+                        <h3 class="item__title--product">ice cream</h3>
+                        <p class="item__text--product">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                        <button type="button" class="item__button--product">
+                            <svg width="40" height="15">
+                                <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="product__item product__item--iceCoffee">
+                        <picture class="item__img--product">
+                            <source srcset="./img/product_iceCofee-desktop.jpg 1x, ./img/product_iceCofee-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/product_iceCofee-desktop.webp 1x, ./img/product_iceCofee-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                
+                            <source srcset="./img/product_iceCofee-tablet.jpg 1x, ./img/product_iceCofee-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/product_iceCofee-tablet.webp 1x, ./img/product_iceCofee-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                
+                            <source srcset="./img/product_iceCofee-mobile.jpg 1x, ./img/product_iceCofee-mobile@2x.jpg 2x" />
+                            <source srcset="./img/product_iceCofee-mobile.webp 1x, ./img/product_iceCofee-tablet@2x.webp 2x"
+                                type="image/webp" />
+                
+                            <img src="./img/product_iceCofee-desktop.jpg" alt="ice cofee"  class="item__img--product iceCoffee__img--product">
+                        </picture>
+                        <div class="product__circle product__circle--iceCoffee"></div>
+                        <h3 class="item__title--product">ice coffee</h3>
+                        <p class="item__text--product">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor
+                            enhancers</p>
+                        <button type="button" class="item__button--product">
+                            <svg width="40" height="15">
+                                <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="product__item product__item--milkshakes">
+                        <picture class="item__img--product">
+                            <source srcset="./img/product_milkshakes-desktop.jpg 1x, ./img/product_milkshakes-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./img/product_milkshakes-desktop.webp 1x, ./img/product_milkshakes-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp" />
+                
+                            <source srcset="./img/product_milkshakes-tablet.jpg 1x, ./img/product_milkshakes-tablet@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./img/product_milkshakes-tablet.webp 1x, ./img/product_milkshakes-tablet@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp" />
+                
+                            <source srcset="./img/product_milkshakes-mobile.jpg 1x, ./img/product_milkshakes-mobile@2x.jpg 2x" />
+                            <source srcset="./img/product_milkshakes-mobile.webp 1x, ./img/product_milkshakes-tablet@2x.webp 2x"
+                                type="image/webp" />
+                
+                            <img src="./img/product_milkshakes-desktop.jpg" alt="ice cofee" class="item__img--product">
+                        </picture>
+                        <div class="product__circle product__circle--milkshakes"></div>
+                        <h3 class="item__title--product">milkshakes</h3>
+                        <p class="item__text--product">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your
+                            choice</p>
+                            <button type="button" class="item__button--product">
+                                <svg width="40" height="15">
+                                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
+                                </svg>
+                            </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <!-- How it's made? -->
-        <!-- <section class="about" id="about">
-            <p>tradition and love</p>
-            <h2>How it’s made?</h2>
-            <img src="" alt="">
-            <ul>
-                <li>
-                    <p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.</p>
-                </li>
-                <li>
-                    <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p>
-                </li>
-            </ul>
-            <button type="button">
-                Read more
-                <svg>
-                    <use></use>
-                </svg>
-            </button>
-        </section> -->
+        <section class="about" id="about">
+            <div class="container about__container">
+                <p class="about__onTitle">tradition and love</p>
+                <h2 class="about__title">How it’s made?</h2>
+                <div class="information__container--about">
+                    <picture>
+                        <source srcset="./img/about_cow-desktop.jpg 1x, ./img/about_cow-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./img/about_cow-desktop.webp 1x, ./img/about_cow-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                            type="image/webp" />
+                    
+                        <source srcset="./img/about_cow-tablet.jpg 1x, ./img/about_cow-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./img/about_cow-tablet.webp 1x, ./img/about_cow-tablet@2x.webp 2x" media="(min-width: 768px)"
+                            type="image/webp" />
+                    
+                        <source srcset="./img/about_cow-mobile.jpg 1x, ./img/about_cow-mobile@2x.jpg 2x" />
+                        <source srcset="./img/about_cow-desktop.webp 1x, ./img/about_cow-tablet@2x.webp 2x" type="image/webp" />
+                    
+                        <img src="./img/about_cow-mobile.jpg" alt="cow" class="about__img">
+                    </picture>
+                    <div class="about__circle"></div>
+                    <div>
+                        <ul class="text__box--about">
+                            <li>
+                                <p class="about__text about__text--bigger">
+                                    Ice is a place where you will become not only a little happier, but also healthier. Health is the main value
+                                    for us, and we follow it when creating our handmade desserts.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="about__text">
+                                    We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given
+                                    to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee
+                                    and 23 milkshakes.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="about__text about__text--invisible">
+                                    This is enough to choose ice cream and coffee for any mood!
+                                </p>
+                            </li>
+                        </ul>
+                        <button type="button" class="button  about__button">
+                            <span class="button__text--about">
+                                Read more
+                                <svg width="12" height="12">
+                                    <use href="./img/symbol-defs.svg#icon-small-arrow"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Advantages -->
-        <!-- <section class="advantages">
-            <h2>Advantages</h2>
-            <ul>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                    <p>
-                        <span>721</span>
-                        <span>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
-                    </p>
-                </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                    <p>
-                        <span>16KG</span>
-                        <span>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
-                    </p>
-                </li>
-                <li>
-                    <svg>
-                        <use></use>
-                    </svg>
-                    <p>
-                        <span>84</span>
-                        <span>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</span>
-                    </p>
-                </li>
-            </ul>
-        </section> -->
+        <section class="advantages">
+            <div class="container advantages__container">
+                <h2 class="advantages__title">Advantages</h2>
+                <ul class="advantages__box">
+                    <li class="advantages__item">
+                        <svg class="item__icon--advantages" width="36" height="36">
+                            <use href="./img/symbol-defs.svg#icon-cow"></use>
+                        </svg>
+                        <p class="item__number--advantages">721</p>
+                        <p class="item__text--advantages">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <svg class="item__icon--advantages" width="36" height="36">
+                            <use href="./img/symbol-defs.svg#icon-weight"></use>
+                        </svg>
+                        <p class="item__number--advantages">16KG</p>
+                        <p class="item__text--advantages">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <svg class="item__icon--advantages" width="36" height="36">
+                            <use href="./img/symbol-defs.svg#icon-ice-cream"></use>
+                        </svg>
+                        <p class="item__number--advantages">84</p>
+                        <p class="item__text--advantages">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
         <!-- Gallery -->
         <!-- <section class="gallery">

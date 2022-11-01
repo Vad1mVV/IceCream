@@ -7,6 +7,16 @@ section {
     margin: 0 auto;
     padding: 0 15px;
 }
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
 *,
 *::after,
 *::before {
@@ -14,8 +24,11 @@ section {
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    
     font-style: normal;
     font-weight: 400;
+
+    color: $primary-text-color;
 }
 body,
 ul,
