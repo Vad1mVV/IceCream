@@ -638,6 +638,10 @@ header {
   display: none;
 }
 
+.about__text--bigger {
+  letter-spacing: 0.04em;
+}
+
 .about__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,6 +805,7 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 80px;
+    margin-bottom: 140px;
   }
   .advantages__item {
     width: 152px;
@@ -818,6 +823,7 @@ header {
 @media screen and (min-width: 1200px) {
   .advantages__box {
     gap: 32px;
+    margin-bottom: 120px;
   }
   .advantages__item {
     width: 368px;
@@ -828,5 +834,94 @@ header {
   .item__text--advantages {
     font-size: 16px;
     line-height: 1.76;
+  }
+}
+.customerReviews {
+  background-image: url(../../img/iceCream_bgc.jpg);
+  background-position: center;
+}
+
+.customerReviews__title {
+  display: none;
+}
+
+.comment__item--customerReviews {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customerReviews__item--visible {
+  display: block;
+}
+
+.item__img--customerReviews {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto 32px;
+}
+
+.item__comment--customerReviews {
+  background-color: #84A178;
+  width: 280px;
+  margin: 0 auto 30px;
+  padding: 34px 39px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+}
+
+.item__date--customerReviews {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  color: #131313;
+  margin-bottom: 14px;
+}
+
+.dots__box--customerReviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 72px;
+  gap: 18px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.customerReviews__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.customerReviews__dot--active {
+  background-color: #84A178;
+}
+
+@media screen and (min-width: 768px) {
+  .item__comment--customerReviews {
+    width: 705px;
+    padding: 29px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  .item__date--customerReviews {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item__comment--customerReviews {
+    width: 968px;
+    padding: 39px 74px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */

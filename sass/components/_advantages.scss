@@ -52,6 +52,8 @@
         flex-direction: row;
 
         gap: 80px;
+
+        margin-bottom: 140px;
     }
     .advantages__item {
         width: 152px;
@@ -69,6 +71,8 @@
 @media screen and (min-width: 1200px) {
     .advantages__box {
         gap: 32px;
+
+        margin-bottom: 120px;
     }
     .advantages__item {
         width: 368px;
