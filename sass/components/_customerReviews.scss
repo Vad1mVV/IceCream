@@ -18,7 +18,7 @@
     display: block;
     border-radius: 50%;
 
-    margin: 0 auto 32px;
+    margin: 126px auto 32px;
 }
 .item__comment--customerReviews {
     background-color: $hero-bgc;
@@ -68,6 +68,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .item__img--customerReviews {
+        margin-top: 165px;
+    }
     .item__comment--customerReviews {
         width: 705px;
         
@@ -84,6 +87,9 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .item__img--customerReviews {
+        margin-top: 395px;
+    }
     .item__comment--customerReviews {
         width: 968px;
         

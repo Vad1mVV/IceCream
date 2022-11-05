@@ -836,6 +836,48 @@ header {
     line-height: 1.76;
   }
 }
+.gallery {
+  padding: 0;
+}
+
+.gallery__title {
+  display: none;
+}
+
+.gallery__img {
+  display: none;
+  position: absolute;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  left: 50%;
+  width: 280px;
+  height: 130px;
+  background-position: center;
+  border-radius: 7px;
+}
+
+.gallery__img--visible {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__img {
+    width: 704px;
+    height: 327px;
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
+    border-radius: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img {
+    width: 1013px;
+    height: 422px;
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+    border-radius: 24px;
+  }
+}
 .customerReviews {
   background-image: url(../../img/iceCream_bgc.jpg);
   background-position: center;
@@ -858,7 +900,7 @@ header {
 .item__img--customerReviews {
   display: block;
   border-radius: 50%;
-  margin: 0 auto 32px;
+  margin: 126px auto 32px;
 }
 
 .item__comment--customerReviews {
@@ -905,6 +947,9 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .item__img--customerReviews {
+    margin-top: 165px;
+  }
   .item__comment--customerReviews {
     width: 705px;
     padding: 29px 80px;
@@ -919,6 +964,9 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
+  .item__img--customerReviews {
+    margin-top: 395px;
+  }
   .item__comment--customerReviews {
     width: 968px;
     padding: 39px 74px;
